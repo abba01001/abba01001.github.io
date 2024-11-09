@@ -17,38 +17,46 @@ for %%b in (%branches%) do (
         continue
     )
 
-    :: 检查当前分支是否有更改
-    echo Checking for changes in branch: %%b
-    git status --porcelain
+    :: 检查当前分支是否有未提交的更改，若有则 stash 当前更改
+    echo Checking for uncommitted changes in branch: %%b
+    git diff --quiet
     if %errorlevel% neq 0 (
-        echo Error checking status for %%b. Exiting...
-        pause
-        exit /b %errorlevel%
+        echo Stashing changes in branch %%b...
+        git stash save "Stashed changes before commit on %%b"
+    ) else (
+        echo No changes to stash in branch %%b.
     )
 
-    :: 如果有更改，执行提交和推送
+    :: 检查是否有待提交的更改
     echo Adding changes to branch: %%b
     git add .
     if %errorlevel% neq 0 (
-        echo Failed to add changes to %%b. Exiting...
-        pause
-        exit /b %errorlevel%
+        echo Failed to add changes to %%b. Skipping commit...
+        continue
     )
 
     echo Committing changes to branch: %%b
-    git commit -m "Auto commit for all branches"
+    git commit -m "Auto commit for %%b"
     if %errorlevel% neq 0 (
-        echo Failed to commit changes to %%b. Exiting...
-        pause
-        exit /b %errorlevel%
+        echo No changes to commit on %%b. Skipping push...
+        continue
     )
 
     echo Pushing changes to remote: %%b
     git push origin %%b
     if %errorlevel% neq 0 (
-        echo Failed to push changes to %%b. Exiting...
-        pause
-        exit /b %errorlevel%
+        echo Failed to push changes to %%b. Skipping...
+        continue
+    )
+
+    :: 恢复之前的 stash（如果有的话）
+    echo Checking if there are stashed changes to apply...
+    git stash list
+    if %errorlevel% neq 0 (
+        echo No stashed changes for %%b.
+    ) else (
+        echo Restoring stashed changes to %%b...
+        git stash pop
     )
 
     echo Finished pushing changes to %%b
