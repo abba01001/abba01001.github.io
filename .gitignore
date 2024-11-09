@@ -2,11 +2,5 @@
 Thumbs.db
 db.json
 *.log
-<<<<<<< Updated upstream
 public/
 _multiconfig.yml
-=======
-node_modules/
-_multiconfig.yml
-db.json
->>>>>>> Stashed changes
