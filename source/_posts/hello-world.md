@@ -1,13 +1,13 @@
 ---
-​---
 title: Hello World
 date: 2024-11-10 18:32:00
 author: abba01001
 categories: 杂七杂八
 tags:
-  - Typora
-  - Markdown
-​---
+  - 构建
+  - Git
+  - Hexo
+  - Cos
 ---
 <div style="text-align: center; font-size: 40px; font-weight: bold;">
   Hello World!
@@ -73,7 +73,7 @@ npm install hexo
 
 ### 4.写博客工具
 
-### 5.构建腾讯云cos图床
+### 5.构建腾讯云Cos图床
 
 ### 6.给博客网站换皮肤
 
