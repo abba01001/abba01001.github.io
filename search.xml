@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/11/10/hello-world/"/>
+      <url>/2024/11/10/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-图算法</title>
+      <link href="/2023/06/23/suan-fa-pian-tu-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-tu-suan-fa/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-动态规划算法</title>
+      <link href="/2023/06/23/suan-fa-pian-dong-tai-gui-hua-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-dong-tai-gui-hua-suan-fa/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-贪心算法</title>
+      <link href="/2023/06/23/suan-fa-pian-tan-xin-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-tan-xin-suan-fa/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-排序</title>
+      <link href="/2023/06/23/suan-fa-pian-pai-xu-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-pai-xu-suan-fa/</url>
+      
+        <content type="html"><![CDATA[<div style="color: #cc66ff; font-size: 2rem;">TODO待更新</div><h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h3 id="（1）冒泡排序（Bubble-Sort）"><a href="#（1）冒泡排序（Bubble-Sort）" class="headerlink" title="（1）冒泡排序（Bubble Sort）"></a>（1）冒泡排序（Bubble Sort）</h3><h3 id="（2）选择排序（Selection-Sort）"><a href="#（2）选择排序（Selection-Sort）" class="headerlink" title="（2）选择排序（Selection Sort）"></a>（2）选择排序（Selection Sort）</h3><h3 id="（3）插入排序（Insertion-Sort）"><a href="#（3）插入排序（Insertion-Sort）" class="headerlink" title="（3）插入排序（Insertion Sort）"></a>（3）插入排序（Insertion Sort）</h3><h3 id="（4）希尔排序（Shell-Sort）"><a href="#（4）希尔排序（Shell-Sort）" class="headerlink" title="（4）希尔排序（Shell Sort）"></a>（4）希尔排序（Shell Sort）</h3><h3 id="（5）归并排序（Merge-Sort）"><a href="#（5）归并排序（Merge-Sort）" class="headerlink" title="（5）归并排序（Merge Sort）"></a>（5）归并排序（Merge Sort）</h3><h3 id="（6）快速排序（Quick-Sort）"><a href="#（6）快速排序（Quick-Sort）" class="headerlink" title="（6）快速排序（Quick Sort）"></a>（6）快速排序（Quick Sort）</h3><h3 id="（7）堆排序（Heap-Sort）"><a href="#（7）堆排序（Heap-Sort）" class="headerlink" title="（7）堆排序（Heap Sort）"></a>（7）堆排序（Heap Sort）</h3><h3 id="（8）计数排序（Counting-Sort）"><a href="#（8）计数排序（Counting-Sort）" class="headerlink" title="（8）计数排序（Counting Sort）"></a>（8）计数排序（Counting Sort）</h3><h3 id="（9）桶排序（Bucket-Sort）"><a href="#（9）桶排序（Bucket-Sort）" class="headerlink" title="（9）桶排序（Bucket Sort）"></a>（9）桶排序（Bucket Sort）</h3><h3 id="（10）基数排序（Radix-Sort）"><a href="#（10）基数排序（Radix-Sort）" class="headerlink" title="（10）基数排序（Radix Sort）"></a>（10）基数排序（Radix Sort）</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 排序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-查找</title>
+      <link href="/2023/06/23/suan-fa-pian-cha-zhao-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-cha-zhao-suan-fa/</url>
+      
+        <content type="html"><![CDATA[<div style="color: #cc66ff; font-size: 2rem;">TODO待更新</div><h2 id="查找算法"><a href="#查找算法" class="headerlink" title="查找算法"></a>查找算法</h2><h3 id="（1）二分查找（Binary-Search）✔"><a href="#（1）二分查找（Binary-Search）✔" class="headerlink" title="（1）二分查找（Binary Search）✔"></a>（1）二分查找（Binary Search）✔</h3><p>时间复杂度：O（log n）<br>空间复杂度：O（1）</p><h4 id="代码片段"><a href="#代码片段" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public int <span class="title class_">BinarySearch</span>(int target) </span><br><span class="line">&#123;</span><br><span class="line">    int left = <span class="number">1</span>;</span><br><span class="line">    int right = <span class="number">1000</span>;</span><br><span class="line">    <span class="keyword">while</span> (left &lt;= right) </span><br><span class="line">    &#123;</span><br><span class="line">        int mid = (left + right) / <span class="number">2</span>;</span><br><span class="line">        int val = mid;</span><br><span class="line">        <span class="keyword">if</span> (val &gt; target) </span><br><span class="line">        &#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (val &lt; target) </span><br><span class="line">        &#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="核心思想"><a href="#核心思想" class="headerlink" title="核心思想"></a>核心思想</h4><ol><li>在一个有序的数据集合中快速定位目标值，通过每次排除一半的数据范围来逐步缩小查找范围，最终找到目标值或确定目标值不存在于数据集合中</li><li>分治，即将一个大问题分割成两个或多个小问题，在较小的范围内快速解决问题。</li></ol><h4 id="具体应用"><a href="#具体应用" class="headerlink" title="具体应用"></a>具体应用</h4><p>比如你想在一个有序的从小到大排列的数组中搜索目标值。</p><ol><li>初始时，可以将搜索范围设置为整个数组，然后取中间位置的值。</li><li>如果中间位置的值等于目标值，则直接返回结果；</li><li>如果中间位置的值大于目标值，则说明目标值可能在左半部分，需要在左半部分继续搜索；</li><li>如果中间位置的值小于目标值，则说明目标值可能在右半部分，需要在右半部分继续搜索。<br>如此反复进行，每次可以通过减少一半的搜索范围来快速逼近目标值，最终可以得到目标值或判断目标值不存在于数组中。</li></ol><h3 id="（2）线性查找（Linear-Search）✔"><a href="#（2）线性查找（Linear-Search）✔" class="headerlink" title="（2）线性查找（Linear Search）✔"></a>（2）线性查找（Linear Search）✔</h3><p>时间复杂度：O（n）<br>空间复杂度：O（1）</p><h4 id="代码片段-1"><a href="#代码片段-1" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public int <span class="title class_">LinearSearch</span>(int target) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (int i = <span class="number">0</span>; i &lt; arr.<span class="property">Length</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] == target)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="核心思想-1"><a href="#核心思想-1" class="headerlink" title="核心思想"></a>核心思想</h4><ol><li>直接从头到尾遍历数组，简单粗暴，也是最经典最常用的一个</li></ol><h3 id="（3）插值查找（Interpolation-Search）"><a href="#（3）插值查找（Interpolation-Search）" class="headerlink" title="（3）插值查找（Interpolation Search）"></a>（3）插值查找（Interpolation Search）</h3><h4 id="代码片段-2"><a href="#代码片段-2" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public int <span class="title class_">InterpolationSearch</span>(int[] arr, int target)</span><br><span class="line">&#123;</span><br><span class="line">int low = <span class="number">0</span>;</span><br><span class="line">int high = arr.<span class="property">Length</span> - <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (low &lt;= high &amp;&amp; target &gt;= arr[low] &amp;&amp; target &lt;= arr[high])</span><br><span class="line">&#123;</span><br><span class="line">int pos = low + ((target - arr[low]) * (high - low)) / (arr[high] - arr[low]);</span><br><span class="line"><span class="keyword">if</span> (arr[pos] == target)</span><br><span class="line">&#123;</span><br><span class="line">                <span class="keyword">return</span> pos;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (arr[pos] &lt; target)</span><br><span class="line">&#123;</span><br><span class="line">low = pos + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">high = pos - <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="核心思想-2"><a href="#核心思想-2" class="headerlink" title="核心思想"></a>核心思想</h4><ol><li>xxxxxxxx</li><li>xxxxxxxx</li></ol><h4 id="具体应用-1"><a href="#具体应用-1" class="headerlink" title="具体应用"></a>具体应用</h4><ol><li>xxxxxxxx</li><li>xxxxxxxx</li></ol><h3 id="（4）斐波那契查找（Fibonacci-Search）"><a href="#（4）斐波那契查找（Fibonacci-Search）" class="headerlink" title="（4）斐波那契查找（Fibonacci Search）"></a>（4）斐波那契查找（Fibonacci Search）</h3><h4 id="代码片段-3"><a href="#代码片段-3" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="（5）树表查找（Tree-Search）"><a href="#（5）树表查找（Tree-Search）" class="headerlink" title="（5）树表查找（Tree Search）"></a>（5）树表查找（Tree Search）</h3><h4 id="代码片段-4"><a href="#代码片段-4" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="（6）哈希查找（Hash-Search）"><a href="#（6）哈希查找（Hash-Search）" class="headerlink" title="（6）哈希查找（Hash Search）"></a>（6）哈希查找（Hash Search）</h3><h4 id="代码片段-5"><a href="#代码片段-5" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id="（6）递归查找（Recursive-Search）"><a href="#（6）递归查找（Recursive-Search）" class="headerlink" title="（6）递归查找（Recursive Search）"></a>（6）递归查找（Recursive Search）</h3><h4 id="代码片段-6"><a href="#代码片段-6" class="headerlink" title="代码片段"></a>代码片段</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h2><h2 id="动态规划算法"><a href="#动态规划算法" class="headerlink" title="动态规划算法"></a>动态规划算法</h2><h2 id="图算法"><a href="#图算法" class="headerlink" title="图算法"></a>图算法</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 查找 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Unity---网络篇</title>
+      <link href="/2023/06/23/unity-wang-luo-pian/"/>
+      <url>/2023/06/23/unity-wang-luo-pian/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
