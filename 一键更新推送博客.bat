@@ -19,7 +19,7 @@ timeout /t 2
 echo Switching to main branch...
 git checkout main
 :: 等待 5 秒钟，确保切换分支命令有时间执行
-timeout /t 5
+timeout /t 3
 
 :: 检查 public 文件夹是否存在
 if exist public (
@@ -39,7 +39,7 @@ echo Adding changes to Git...
 git add .
 
 :: 提交更改，使用自定义的提交信息
-git commit -m "Moved files from public folder and deleted the folder."
+git commit -m "更新博客"
 
 :: 推送到远程仓库的 main 分支
 echo Pushing changes to GitHub...
