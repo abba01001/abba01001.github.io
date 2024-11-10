@@ -39,7 +39,7 @@ echo Adding changes to Git...
 git add .
 
 :: 提交更改，使用自定义的提交信息
-git commit -m "Moved files from public folder and deleted the folder."
+git commit -m "更新博客"
 
 :: 推送到远程仓库的 main 分支
 echo Pushing changes to GitHub...
