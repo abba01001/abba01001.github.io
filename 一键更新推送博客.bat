@@ -19,7 +19,7 @@ timeout /t 2
 echo Switching to main branch...
 git checkout main
 :: 等待 5 秒钟，确保切换分支命令有时间执行
-timeout /t 5
+timeout /t 3
 
 :: 检查 public 文件夹是否存在
 if exist public (
