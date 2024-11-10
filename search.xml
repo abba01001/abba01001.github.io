@@ -8,7 +8,7 @@
       <link href="/2024/11/10/hello-world/"/>
       <url>/2024/11/10/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hello World!<br>忙活了两天，终于把丢失的博客给搭好了，并构建了一键自动化推送博客的工具，实力也是肉眼可见的变强了。哈哈哈哈哈哈<br>早在一年前，就已经有搭博客的想法了，当时兴冲冲的买了一个域名，想着搭个博客记录下自己平时学习的，可搭完没多久，就放弃了。。。</p><p>哈哈哈哈哈哈哈哈哈，真是三天打鱼两天晒网。</p><p>这次也是下定决心，开始好好记录自己的博客，忙活了两天，刚开始还忘记了这个博客要怎么用来着。</p><p>下面总结一下这两天搭博客的旅程。</p><h2 id="搭建博客之旅"><a href="#搭建博客之旅" class="headerlink" title="搭建博客之旅"></a>搭建博客之旅</h2><h3 id="1-构建本地博客"><a href="#1-构建本地博客" class="headerlink" title="1.构建本地博客"></a>1.构建本地博客</h3><p>网上下载安装Node、Git(Git安装自行百度，安装好之后需要配好环境，不然初始化不了博客)</p><p>cmd输入命令进行安装hexo</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo</span><br></pre></td></tr></table></figure><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817724.png" alt="image-20241110173559862"></p><p>初始化博客</p><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817734.png" alt="image-20241110174101421"></p><p>博客目录结构</p><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817638.png" alt="image-20241110174215476"></p><p>安装博客所需模块</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在博客目录下cmd执行npm install</span><br></pre></td></tr></table></figure><p>部署到本地</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在博客目录下cmd执行hexo server</span><br></pre></td></tr></table></figure><p>然后在浏览器输入<a href="http://localhost:4000/%E6%89%93%E5%BC%80%E5%88%9A%E5%88%9A%E6%90%AD%E5%BB%BA%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E3%80%82%E8%87%B3%E6%AD%A4%E5%B0%B1%E5%AE%8C%E6%88%90%E4%BA%86%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA">http://localhost:4000/打开刚刚搭建的博客网站。至此就完成了一个博客的搭建</a></p><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817497.png" alt="image-20241110174711673"></p><h3 id="2-构建博客网站"><a href="#2-构建博客网站" class="headerlink" title="2.构建博客网站"></a>2.构建博客网站</h3><p>有空记录下&#x3D;&#x3D;&#x3D;</p><h3 id="3-简化操作推送博客网站"><a href="#3-简化操作推送博客网站" class="headerlink" title="3.简化操作推送博客网站"></a>3.简化操作推送博客网站</h3><p>有空记录下&#x3D;&#x3D;&#x3D;</p><h3 id="4-写博客工具-构建腾讯云cos图床"><a href="#4-写博客工具-构建腾讯云cos图床" class="headerlink" title="4.写博客工具,构建腾讯云cos图床"></a>4.写博客工具,构建腾讯云cos图床</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>今天先写到这了，有时间在补上去~</p><p>fighting!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>]]></content>
       
       
       
@@ -98,33 +98,6 @@
     
     
     <entry>
-      <title>算法篇-排序</title>
-      <link href="/2023/06/23/suan-fa-pian-pai-xu-suan-fa/"/>
-      <url>/2023/06/23/suan-fa-pian-pai-xu-suan-fa/</url>
-      
-        <content type="html"><![CDATA[<div style="color: #cc66ff; font-size: 2rem;">TODO待更新</div><h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h3 id="（1）冒泡排序（Bubble-Sort）"><a href="#（1）冒泡排序（Bubble-Sort）" class="headerlink" title="（1）冒泡排序（Bubble Sort）"></a>（1）冒泡排序（Bubble Sort）</h3><h3 id="（2）选择排序（Selection-Sort）"><a href="#（2）选择排序（Selection-Sort）" class="headerlink" title="（2）选择排序（Selection Sort）"></a>（2）选择排序（Selection Sort）</h3><h3 id="（3）插入排序（Insertion-Sort）"><a href="#（3）插入排序（Insertion-Sort）" class="headerlink" title="（3）插入排序（Insertion Sort）"></a>（3）插入排序（Insertion Sort）</h3><h3 id="（4）希尔排序（Shell-Sort）"><a href="#（4）希尔排序（Shell-Sort）" class="headerlink" title="（4）希尔排序（Shell Sort）"></a>（4）希尔排序（Shell Sort）</h3><h3 id="（5）归并排序（Merge-Sort）"><a href="#（5）归并排序（Merge-Sort）" class="headerlink" title="（5）归并排序（Merge Sort）"></a>（5）归并排序（Merge Sort）</h3><h3 id="（6）快速排序（Quick-Sort）"><a href="#（6）快速排序（Quick-Sort）" class="headerlink" title="（6）快速排序（Quick Sort）"></a>（6）快速排序（Quick Sort）</h3><h3 id="（7）堆排序（Heap-Sort）"><a href="#（7）堆排序（Heap-Sort）" class="headerlink" title="（7）堆排序（Heap Sort）"></a>（7）堆排序（Heap Sort）</h3><h3 id="（8）计数排序（Counting-Sort）"><a href="#（8）计数排序（Counting-Sort）" class="headerlink" title="（8）计数排序（Counting Sort）"></a>（8）计数排序（Counting Sort）</h3><h3 id="（9）桶排序（Bucket-Sort）"><a href="#（9）桶排序（Bucket-Sort）" class="headerlink" title="（9）桶排序（Bucket Sort）"></a>（9）桶排序（Bucket Sort）</h3><h3 id="（10）基数排序（Radix-Sort）"><a href="#（10）基数排序（Radix-Sort）" class="headerlink" title="（10）基数排序（Radix Sort）"></a>（10）基数排序（Radix Sort）</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> 学习 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法 </tag>
-            
-            <tag> 排序 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>算法篇-查找</title>
       <link href="/2023/06/23/suan-fa-pian-cha-zhao-suan-fa/"/>
       <url>/2023/06/23/suan-fa-pian-cha-zhao-suan-fa/</url>
@@ -144,6 +117,33 @@
             <tag> 算法 </tag>
             
             <tag> 查找 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法篇-排序</title>
+      <link href="/2023/06/23/suan-fa-pian-pai-xu-suan-fa/"/>
+      <url>/2023/06/23/suan-fa-pian-pai-xu-suan-fa/</url>
+      
+        <content type="html"><![CDATA[<div style="color: #cc66ff; font-size: 2rem;">TODO待更新</div><h2 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h2><h3 id="（1）冒泡排序（Bubble-Sort）"><a href="#（1）冒泡排序（Bubble-Sort）" class="headerlink" title="（1）冒泡排序（Bubble Sort）"></a>（1）冒泡排序（Bubble Sort）</h3><h3 id="（2）选择排序（Selection-Sort）"><a href="#（2）选择排序（Selection-Sort）" class="headerlink" title="（2）选择排序（Selection Sort）"></a>（2）选择排序（Selection Sort）</h3><h3 id="（3）插入排序（Insertion-Sort）"><a href="#（3）插入排序（Insertion-Sort）" class="headerlink" title="（3）插入排序（Insertion Sort）"></a>（3）插入排序（Insertion Sort）</h3><h3 id="（4）希尔排序（Shell-Sort）"><a href="#（4）希尔排序（Shell-Sort）" class="headerlink" title="（4）希尔排序（Shell Sort）"></a>（4）希尔排序（Shell Sort）</h3><h3 id="（5）归并排序（Merge-Sort）"><a href="#（5）归并排序（Merge-Sort）" class="headerlink" title="（5）归并排序（Merge Sort）"></a>（5）归并排序（Merge Sort）</h3><h3 id="（6）快速排序（Quick-Sort）"><a href="#（6）快速排序（Quick-Sort）" class="headerlink" title="（6）快速排序（Quick Sort）"></a>（6）快速排序（Quick Sort）</h3><h3 id="（7）堆排序（Heap-Sort）"><a href="#（7）堆排序（Heap-Sort）" class="headerlink" title="（7）堆排序（Heap Sort）"></a>（7）堆排序（Heap Sort）</h3><h3 id="（8）计数排序（Counting-Sort）"><a href="#（8）计数排序（Counting-Sort）" class="headerlink" title="（8）计数排序（Counting Sort）"></a>（8）计数排序（Counting Sort）</h3><h3 id="（9）桶排序（Bucket-Sort）"><a href="#（9）桶排序（Bucket-Sort）" class="headerlink" title="（9）桶排序（Bucket Sort）"></a>（9）桶排序（Bucket Sort）</h3><h3 id="（10）基数排序（Radix-Sort）"><a href="#（10）基数排序（Radix-Sort）" class="headerlink" title="（10）基数排序（Radix Sort）"></a>（10）基数排序（Radix Sort）</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> 排序 </tag>
             
         </tags>
       
