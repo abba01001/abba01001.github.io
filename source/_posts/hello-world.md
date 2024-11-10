@@ -1,9 +1,21 @@
 ---
+​---
 title: Hello World
+date: 2024-11-10 18:32:00
+author: abba01001
+categories: 杂七杂八
+tags:
+  - Typora
+  - Markdown
+​---
 ---
+<div style="text-align: center; font-size: 40px; font-weight: bold;">
+  Hello World!
+</div>
 ## 前言
 
-Hello World!
+
+
 忙活了两天，终于把丢失的博客给搭好了，并构建了一键自动化推送博客的工具，实力也是肉眼可见的变强了。哈哈哈哈哈哈
 早在一年前，就已经有搭博客的想法了，当时兴冲冲的买了一个域名，想着搭个博客记录下自己平时学习的，可搭完没多久，就放弃了。。。
 
@@ -25,15 +37,15 @@ cmd输入命令进行安装hexo
 npm install hexo
 ```
 
-![image-20241110173559862](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817724.png)
+![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817724.png)
 
 初始化博客
 
-![image-20241110174101421](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817734.png)
+![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817734.png)
 
 博客目录结构
 
-![image-20241110174215476](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817638.png)
+![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817638.png)
 
 安装博客所需模块
 
@@ -49,7 +61,7 @@ npm install hexo
 
 然后在浏览器输入http://localhost:4000/打开刚刚搭建的博客网站。至此就完成了一个博客的搭建
 
-![image-20241110174711673](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817497.png)
+![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817497.png)
 
 ### 2.构建博客网站
 
@@ -59,7 +71,11 @@ npm install hexo
 
 有空记录下===
 
-### 4.写博客工具,构建腾讯云cos图床
+### 4.写博客工具
+
+### 5.构建腾讯云cos图床
+
+### 6.给博客网站换皮肤
 
 ## 总结
 
