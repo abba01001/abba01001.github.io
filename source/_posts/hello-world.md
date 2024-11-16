@@ -33,6 +33,10 @@ tags:
 
 cmd输入命令进行安装hexo
 
+
+
+
+
 ```
 npm install hexo
 ```
@@ -63,19 +67,35 @@ npm install hexo
 
 ![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817497.png)
 
-### 2.构建博客网站
+### 2.将博客部署到GitHub
+
+在github里创建一个=========用户名.github.io的仓库
+![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411112120698.png)
+
+然后再刚刚初始化的博客目录下执行
+
+```
+hexo g
+```
+
+![](C:\Users\Administrator\Pictures\BlogImage\202411112125101.png)
+
+生成public文件夹，public文件夹里的就时静态网站文件。
+
 
 有空记录下===
 
-### 3.简化操作推送博客网站
+### 3.将博客网站部署到服务器
+
+### 4.简化操作推送博客网站
 
 有空记录下===
 
-### 4.写博客工具
+### 5.写博客工具
 
-### 5.构建腾讯云Cos图床
+### 6.构建腾讯云Cos图床
 
-### 6.给博客网站换皮肤
+### 7.给博客网站换皮肤
 
 ## 总结
 
