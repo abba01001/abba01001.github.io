@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2024/11/21/tuanjie-wei-xin-xiao-you-xi/"/>
+      <url>/2024/11/21/tuanjie-wei-xin-xiao-you-xi/</url>
+      
+        <content type="html"><![CDATA[<div style="text-align: center; font-size: 40px; font-weight: bold;">  切换微信小游戏平台问题记录</div><h4 id="1-切换平台后，hybridclr热更框架不支持。"><a href="#1-切换平台后，hybridclr热更框架不支持。" class="headerlink" title="1.切换平台后，hybridclr热更框架不支持。"></a>1.切换平台后，hybridclr热更框架不支持。</h4><p>将hybridclr插件升至最新版本。升完后需要清理下缓存，将项目里的Library和obj文件夹删掉，再打开项目</p><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210004662.png"></p><h3 id="2-编译Generate-All报错。"><a href="#2-编译Generate-All报错。" class="headerlink" title="2.编译Generate&#x2F;All报错。"></a>2.编译Generate&#x2F;All报错。</h3><p><command line>:12:9: note: previous definition is here #define SLIM_GLOBAL_METADATA_FILE 1        ^ 1 warning and 1 error generated.</p><p>1.2.1以上团结引擎取消勾选Use Slim Format For global-metadata.dat<img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210009848.png"></p><p>在HybridCLRData\LocalIl2CppData-WindowsEditor\il2cpp\libil2cpp\il2cpp-config.h找到<br>#define SLIM_GLOBAL_METADATA_FILE 1<br>将其改为#define SLIM_GLOBAL_METADATA_FILE 0</p><h4 id="3-编辑器拓展里默认序列化的Enum报错。"><a href="#3-编辑器拓展里默认序列化的Enum报错。" class="headerlink" title="3.编辑器拓展里默认序列化的Enum报错。"></a>3.编辑器拓展里默认序列化的Enum报错。</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public enum CusBuildTarget</span><br><span class="line">&#123;</span><br><span class="line">    Windows,</span><br><span class="line">    Android,</span><br><span class="line">    IOS,</span><br><span class="line">    WeiXinMiniGame</span><br><span class="line">&#125;</span><br><span class="line">public CusBuildTarget CurrBuildTarget;</span><br></pre></td></tr></table></figure><p>可以加上第三方插件的序列化<br>如下:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[EnumPaging]</span><br><span class="line">public CusBuildTarget CurrBuildTarget;</span><br></pre></td></tr></table></figure><h4 id="4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端"><a href="#4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端" class="headerlink" title="4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)"></a>4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)</h4><h4 id="5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题"><a href="#5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题" class="headerlink" title="5.本地http://localhost:8000中测试微信小游戏的 WebGL,访问Cos出现CORS（跨域资源共享）问题"></a>5.本地<a href="http://localhost:8000中测试微信小游戏的">http://localhost:8000中测试微信小游戏的</a> WebGL,访问Cos出现CORS（跨域资源共享）问题</h4><p>Access to fetch at ‘<a href="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt">https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt</a>‘ from origin ‘<a href="http://localhost:8000/">http://localhost:8000</a>‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is present on the requested resource. If an opaque response serves your needs, set the request’s mode to ‘no-cors’ to fetch the resource with CORS disabled.</p><p>解决：</p><p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210016289.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tuanjie </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/11/20/ce-shi/"/>
+      <url>/2024/11/20/ce-shi/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">title: typora-vue-theme主题介绍</span><br><span class="line">date: 2018-09-07 09:25:00</span><br><span class="line">author: 赵奇</span><br><span class="line">img: /source/images/xxx.jpg</span><br><span class="line">top: true</span><br><span class="line">hide: false</span><br><span class="line">cover: true</span><br><span class="line">coverImg: /images/1.jpg</span><br><span class="line">password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span><br><span class="line">toc: false</span><br><span class="line">mathjax: false</span><br><span class="line">summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</span><br><span class="line">categories: Markdown</span><br><span class="line">tags:</span><br><span class="line">  - Typora</span><br><span class="line">  - Markdown</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭建V2Ray服务器（ws+tls+web）</title>
       <link href="/2024/11/16/gong-ju-pian-da-jian-ti-zi/"/>
       <url>/2024/11/16/gong-ju-pian-da-jian-ti-zi/</url>
@@ -16,19 +48,6 @@
           <category> 工具 </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2024/11/11/ce-shi/"/>
-      <url>/2024/11/11/ce-shi/</url>
-      
-        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">title: typora-vue-theme主题介绍</span><br><span class="line">date: 2018-09-07 09:25:00</span><br><span class="line">author: 赵奇</span><br><span class="line">img: /source/images/xxx.jpg</span><br><span class="line">top: true</span><br><span class="line">hide: false</span><br><span class="line">cover: true</span><br><span class="line">coverImg: /images/1.jpg</span><br><span class="line">password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span><br><span class="line">toc: false</span><br><span class="line">mathjax: false</span><br><span class="line">summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</span><br><span class="line">categories: Markdown</span><br><span class="line">tags:</span><br><span class="line">  - Typora</span><br><span class="line">  - Markdown</span><br></pre></td></tr></table></figure>]]></content>
-      
       
       
     </entry>
