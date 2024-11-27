@@ -43,8 +43,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-
-syntax_highlighter: prismjs
+syntax_highlighter: highlight.js
 highlight:
   enable: false
   line_number: true
@@ -56,7 +55,6 @@ prismjs:
   enable: true
   preprocess: true
   line_number: true
-  line_threshold: 0
   tab_replace: ''
 
 # Home page setting
