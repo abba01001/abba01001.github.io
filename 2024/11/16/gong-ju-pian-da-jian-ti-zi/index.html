@@ -675,12 +675,126 @@
 <p>下载地址： <a target="_blank" rel="noopener" href="https://notepad-plus-plus.org/downloads/">网页链接，直接下载链接(7.8.4)</a></p>
 <p>2.1 V2Ray配置文件</p>
 <p>V2Ray配置文件如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;inbound&quot;: &#123;</span><br><span class="line">    &quot;protocol&quot;: &quot;vmess&quot;,</span><br><span class="line">    &quot;listen&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line"> &quot;port&quot;: 9696,</span><br><span class="line"> &quot;settings&quot;: &#123;&quot;clients&quot;: [</span><br><span class="line">        &#123;&quot;id&quot;: &quot;bc0d0a35-0218-4d66-8bcf-f384bd6cf905&quot;&#125;</span><br><span class="line">    ]&#125;,</span><br><span class="line"> &quot;streamSettings&quot;: &#123;</span><br><span class="line"> &quot;network&quot;: &quot;ws&quot;,</span><br><span class="line"> &quot;wsSettings&quot;: &#123;&quot;path&quot;: &quot;/h5j9QKvr64g&quot;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line">&quot;outbound&quot;: &#123;&quot;protocol&quot;: &quot;freedom&quot;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">&#123;
+&quot;inbound&quot;: &#123;
+    &quot;protocol&quot;: &quot;vmess&quot;,
+    &quot;listen&quot;: &quot;127.0.0.1&quot;,
+ &quot;port&quot;: 9696,
+ &quot;settings&quot;: &#123;&quot;clients&quot;: [
+        &#123;&quot;id&quot;: &quot;bc0d0a35-0218-4d66-8bcf-f384bd6cf905&quot;&#125;
+    ]&#125;,
+ &quot;streamSettings&quot;: &#123;
+ &quot;network&quot;: &quot;ws&quot;,
+ &quot;wsSettings&quot;: &#123;&quot;path&quot;: &quot;&#x2F;h5j9QKvr64g&quot;&#125;
+    &#125;
+&#125;,
+
+&quot;outbound&quot;: &#123;&quot;protocol&quot;: &quot;freedom&quot;&#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>把V2Ray的配置文件另存为config.json</p>
 <p>2.2 Nginx配置文件</p>
 <p>Nginx配置文件如下：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">    #                  &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">    #                  &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line"></span><br><span class="line">	server &#123;</span><br><span class="line">    ### 1:</span><br><span class="line">		server_name www.abba01001.fun;</span><br><span class="line"></span><br><span class="line">		listen 80;</span><br><span class="line">		rewrite ^(.*) https://$server_name$1 permanent;</span><br><span class="line">		if ($request_method  !~ ^(POST|GET)$) &#123; return  501; &#125;</span><br><span class="line">		autoindex off;</span><br><span class="line">		server_tokens off;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	server &#123;</span><br><span class="line">		ssl_certificate &quot;C:/Certbot/live/www.abba01001.fun/fullchain.pem&quot;;</span><br><span class="line">		ssl_certificate_key &quot;C:/Certbot/live/www.abba01001.fun/privkey.pem&quot;;</span><br><span class="line"></span><br><span class="line">    ### 4:</span><br><span class="line">		location /h5j9QKvr64g</span><br><span class="line">		&#123;</span><br><span class="line">			proxy_pass http://127.0.0.1:9696;</span><br><span class="line">			proxy_redirect off;</span><br><span class="line"></span><br><span class="line">			proxy_http_version 1.1;</span><br><span class="line">			proxy_set_header Upgrade $http_upgrade;</span><br><span class="line">			proxy_set_header Connection &quot;upgrade&quot;;</span><br><span class="line">			proxy_set_header Host $host;</span><br><span class="line"></span><br><span class="line">			sendfile on;</span><br><span class="line">			tcp_nopush on;</span><br><span class="line">			tcp_nodelay on;</span><br><span class="line">			keepalive_requests 25600;</span><br><span class="line">			keepalive_timeout 300 300;</span><br><span class="line">			proxy_buffering off;</span><br><span class="line">			proxy_buffer_size 8k;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		listen 443 ssl http2;</span><br><span class="line">		server_name $server_name;</span><br><span class="line">		charset utf-8;</span><br><span class="line"></span><br><span class="line">		ssl_protocols TLSv1.2 TLSv1.3;</span><br><span class="line">		ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!3DES:!MD5:!PSK;</span><br><span class="line">		ssl_prefer_server_ciphers on;</span><br><span class="line"></span><br><span class="line">		ssl_session_cache shared:SSL:60m;</span><br><span class="line">		ssl_session_timeout 1d;</span><br><span class="line">		ssl_session_tickets off;</span><br><span class="line"></span><br><span class="line">		ssl_stapling on;</span><br><span class="line">		ssl_stapling_verify on;</span><br><span class="line">		resolver 8.8.8.8 8.8.4.4 valid=300s;</span><br><span class="line">		resolver_timeout 10s;</span><br><span class="line"></span><br><span class="line">    # Security settings</span><br><span class="line">		if ($request_method  !~ ^(POST|GET)$) &#123; return 501; &#125;</span><br><span class="line">		add_header X-Frame-Options DENY;</span><br><span class="line">		add_header X-XSS-Protection &quot;1; mode=block&quot;;</span><br><span class="line">		add_header X-Content-Type-Options nosniff;</span><br><span class="line">		add_header Strict-Transport-Security max-age=31536000 always;</span><br><span class="line">		autoindex off;</span><br><span class="line">		server_tokens off;</span><br><span class="line"></span><br><span class="line">		index index.html index.htm index.php;</span><br><span class="line">		root /usr/share/nginx/html;</span><br><span class="line">		location ~ .*\.(js|jpg|JPG|jpeg|JPEG|css|bmp|gif|GIF|png)$ &#123; access_log off; &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">#user  nobody;
+worker_processes  1;
+
+#error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+#pid        logs/nginx.pid;
+
+
+events &#123;
+    worker_connections  1024;
+&#125;
+
+
+http &#123;
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+    #access_log  logs/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+	server &#123;
+    ### 1:
+		server_name www.abba01001.fun;
+
+		listen 80;
+		rewrite ^(.*) https://$server_name$1 permanent;
+		if ($request_method  !~ ^(POST|GET)$) &#123; return  501; &#125;
+		autoindex off;
+		server_tokens off;
+	&#125;
+	
+	server &#123;
+		ssl_certificate "C:/Certbot/live/www.abba01001.fun/fullchain.pem";
+		ssl_certificate_key "C:/Certbot/live/www.abba01001.fun/privkey.pem";
+
+    ### 4:
+		location /h5j9QKvr64g
+		&#123;
+			proxy_pass http://127.0.0.1:9696;
+			proxy_redirect off;
+
+			proxy_http_version 1.1;
+			proxy_set_header Upgrade $http_upgrade;
+			proxy_set_header Connection "upgrade";
+			proxy_set_header Host $host;
+
+			sendfile on;
+			tcp_nopush on;
+			tcp_nodelay on;
+			keepalive_requests 25600;
+			keepalive_timeout 300 300;
+			proxy_buffering off;
+			proxy_buffer_size 8k;
+		&#125;
+
+		listen 443 ssl http2;
+		server_name $server_name;
+		charset utf-8;
+
+		ssl_protocols TLSv1.2 TLSv1.3;
+		ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!3DES:!MD5:!PSK;
+		ssl_prefer_server_ciphers on;
+
+		ssl_session_cache shared:SSL:60m;
+		ssl_session_timeout 1d;
+		ssl_session_tickets off;
+
+		ssl_stapling on;
+		ssl_stapling_verify on;
+		resolver 8.8.8.8 8.8.4.4 valid=300s;
+		resolver_timeout 10s;
+
+    # Security settings
+		if ($request_method  !~ ^(POST|GET)$) &#123; return 501; &#125;
+		add_header X-Frame-Options DENY;
+		add_header X-XSS-Protection "1; mode=block";
+		add_header X-Content-Type-Options nosniff;
+		add_header Strict-Transport-Security max-age=31536000 always;
+		autoindex off;
+		server_tokens off;
+
+		index index.html index.htm index.php;
+		root /usr/share/nginx/html;
+		location ~ .*\.(js|jpg|JPG|jpeg|JPEG|css|bmp|gif|GIF|png)$ &#123; access_log off; &#125;
+	&#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>把Nginx的配置文件另存为nginx.conf（注意扩展名就是.conf）</p>
 <h2 id="3-上传配置-运行"><a href="#3-上传配置-运行" class="headerlink" title="3.上传配置 &amp; 运行"></a>3.上传配置 &amp; 运行</h2><p>3.1 连接到服务器，安装v2ray+Nginx</p>
@@ -722,7 +836,7 @@
 <p>第一个-d加一个带www的域名，第二个-d加一个不带www的域名，-m后面加你的电子邮箱。</p>
 <p>注意前后要带空格。</p>
 <p>例子：（域名：<a target="_blank" rel="noopener" href="http://www.hrw1rdzqa7c5a8u3ibkn.website%EF%BC%8C%E9%82%AE%E7%AE%B1%EF%BC%9Axijinping@protonmail.com)/">www.hrw1rdzqa7c5a8u3ibkn.website，邮箱：xijinping@protonmail.com）</a></p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website -d hrw1rdzqa7c5a8u3ibkn.website -m xijinping@protonmail.com</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website -d hrw1rdzqa7c5a8u3ibkn.website -m xijinping@protonmail.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>运行这条命令后，如果显示：</p>
 <blockquote>
@@ -1006,13 +1120,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/11/20/ce-shi/">
+                <a href="/2024/11/21/tuanjie-wei-xin-xiao-you-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1023,12 +1137,16 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-11-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-11-21
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Tuanjie/" class="post-category">
+                                    Tuanjie
+                                </a>
+                            
                             
                         </span>
                     </div>

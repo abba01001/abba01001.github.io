@@ -594,10 +594,18 @@
 <h3 id="2-编译Generate-All报错。"><a href="#2-编译Generate-All报错。" class="headerlink" title="2.编译Generate&#x2F;All报错。"></a>2.编译Generate&#x2F;All报错。</h3><p><command line>:12:9: note: previous definition is here #define SLIM_GLOBAL_METADATA_FILE 1        ^ 1 warning and 1 error generated.</p>
 <p>1.2.1以上团结引擎取消勾选Use Slim Format For global-metadata.dat<img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210009848.png"></p>
 <p>在HybridCLRData\LocalIl2CppData-WindowsEditor\il2cpp\libil2cpp\il2cpp-config.h找到<br>#define SLIM_GLOBAL_METADATA_FILE 1<br>将其改为#define SLIM_GLOBAL_METADATA_FILE 0</p>
-<h4 id="3-编辑器拓展里默认序列化的Enum报错。"><a href="#3-编辑器拓展里默认序列化的Enum报错。" class="headerlink" title="3.编辑器拓展里默认序列化的Enum报错。"></a>3.编辑器拓展里默认序列化的Enum报错。</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public enum CusBuildTarget</span><br><span class="line">&#123;</span><br><span class="line">    Windows,</span><br><span class="line">    Android,</span><br><span class="line">    IOS,</span><br><span class="line">    WeiXinMiniGame</span><br><span class="line">&#125;</span><br><span class="line">public CusBuildTarget CurrBuildTarget;</span><br></pre></td></tr></table></figure>
+<h4 id="3-编辑器拓展里默认序列化的Enum报错。"><a href="#3-编辑器拓展里默认序列化的Enum报错。" class="headerlink" title="3.编辑器拓展里默认序列化的Enum报错。"></a>3.编辑器拓展里默认序列化的Enum报错。</h4><pre class="line-numbers language-none"><code class="language-none">public enum CusBuildTarget
+&#123;
+    Windows,
+    Android,
+    IOS,
+    WeiXinMiniGame
+&#125;
+public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>可以加上第三方插件的序列化<br>如下:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[EnumPaging]</span><br><span class="line">public CusBuildTarget CurrBuildTarget;</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">[EnumPaging]
+public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端"><a href="#4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端" class="headerlink" title="4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)"></a>4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)</h4><h4 id="5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题"><a href="#5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题" class="headerlink" title="5.本地http://localhost:8000中测试微信小游戏的 WebGL,访问Cos出现CORS（跨域资源共享）问题"></a>5.本地<a href="http://localhost:8000中测试微信小游戏的">http://localhost:8000中测试微信小游戏的</a> WebGL,访问Cos出现CORS（跨域资源共享）问题</h4><p>Access to fetch at ‘<a target="_blank" rel="noopener" href="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt">https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt</a>‘ from origin ‘<a target="_blank" rel="noopener" href="http://localhost:8000/">http://localhost:8000</a>‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is present on the requested resource. If an opaque response serves your needs, set the request’s mode to ‘no-cors’ to fetch the resource with CORS disabled.</p>
 <p>解决：</p>
@@ -880,13 +888,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/11/20/ce-shi/">
+                <a href="/2024/11/16/gong-ju-pian-da-jian-ti-zi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="搭建V2Ray服务器（ws+tls+web）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">搭建V2Ray服务器（ws+tls+web）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -897,12 +905,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    工具
+                                </a>
+                            
                             
                         </span>
                     </div>
