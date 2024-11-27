@@ -33,13 +33,11 @@ tags:
 
 cmd输入命令进行安装hexo
 
-
-
-
-
-```
+```node
 npm install hexo
 ```
+
+
 
 ![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817724.png)
 
@@ -74,9 +72,11 @@ npm install hexo
 
 然后再刚刚初始化的博客目录下执行
 
-```
+```hexo
 hexo g
 ```
+
+
 
 ![](C:\Users\Administrator\Pictures\BlogImage\202411112125101.png)
 
