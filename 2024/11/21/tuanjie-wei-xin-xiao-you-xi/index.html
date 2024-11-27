@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="团结引擎问题记录, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>团结引擎问题记录 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -418,12 +418,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">团结引擎问题记录</h1>
                 </div>
             </div>
         </div>
@@ -585,14 +585,13 @@
   切换微信小游戏平台问题记录
 </div>
 
-
-
-<h4 id="1-切换平台后，hybridclr热更框架不支持。"><a href="#1-切换平台后，hybridclr热更框架不支持。" class="headerlink" title="1.切换平台后，hybridclr热更框架不支持。"></a>1.切换平台后，hybridclr热更框架不支持。</h4><p>将hybridclr插件升至最新版本。升完后需要清理下缓存，将项目里的Library和obj文件夹删掉，再打开项目</p>
+<h3 id="1-切换平台后，hybridclr热更框架不支持。"><a href="#1-切换平台后，hybridclr热更框架不支持。" class="headerlink" title="1.切换平台后，hybridclr热更框架不支持。"></a>1.切换平台后，hybridclr热更框架不支持。</h3><p>将hybridclr插件升至最新版本。升完后需要清理下缓存，将项目里的Library和obj文件夹删掉，再打开项目</p>
 <p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210004662.png"></p>
-<h3 id="2-编译Generate-All报错。"><a href="#2-编译Generate-All报错。" class="headerlink" title="2.编译Generate&#x2F;All报错。"></a>2.编译Generate&#x2F;All报错。</h3><p><command line>:12:9: note: previous definition is here #define SLIM_GLOBAL_METADATA_FILE 1        ^ 1 warning and 1 error generated.</p>
+<h3 id="2-编译Generate-All报错。"><a href="#2-编译Generate-All报错。" class="headerlink" title="2.编译Generate&#x2F;All报错。"></a>2.编译Generate&#x2F;All报错。</h3><pre class="line-numbers language-none"><code class="language-none">&lt;command line&gt;:12:9: note: previous definition is here #define SLIM_GLOBAL_METADATA_FILE 1        ^ 1 warning and 1 error generated.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>1.2.1以上团结引擎取消勾选Use Slim Format For global-metadata.dat<img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210009848.png"></p>
 <p>在HybridCLRData\LocalIl2CppData-WindowsEditor\il2cpp\libil2cpp\il2cpp-config.h找到<br>#define SLIM_GLOBAL_METADATA_FILE 1<br>将其改为#define SLIM_GLOBAL_METADATA_FILE 0</p>
-<h4 id="3-编辑器拓展里默认序列化的Enum报错。"><a href="#3-编辑器拓展里默认序列化的Enum报错。" class="headerlink" title="3.编辑器拓展里默认序列化的Enum报错。"></a>3.编辑器拓展里默认序列化的Enum报错。</h4><pre class="line-numbers language-none"><code class="language-none">public enum CusBuildTarget
+<h3 id="3-编辑器拓展里默认序列化的Enum报错。"><a href="#3-编辑器拓展里默认序列化的Enum报错。" class="headerlink" title="3.编辑器拓展里默认序列化的Enum报错。"></a>3.编辑器拓展里默认序列化的Enum报错。</h3><pre class="line-numbers language-none"><code class="language-none">public enum CusBuildTarget
 &#123;
     Windows,
     Android,
@@ -605,7 +604,8 @@ public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbe
 <pre class="line-numbers language-none"><code class="language-none">[EnumPaging]
 public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端"><a href="#4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端" class="headerlink" title="4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)"></a>4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)</h4><h4 id="5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题"><a href="#5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题" class="headerlink" title="5.本地http://localhost:8000中测试微信小游戏的 WebGL,访问Cos出现CORS（跨域资源共享）问题"></a>5.本地<a href="http://localhost:8000中测试微信小游戏的">http://localhost:8000中测试微信小游戏的</a> WebGL,访问Cos出现CORS（跨域资源共享）问题</h4><p>Access to fetch at ‘<a target="_blank" rel="noopener" href="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt">https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/APK/APKVersion.txt</a>‘ from origin ‘<a target="_blank" rel="noopener" href="http://localhost:8000/">http://localhost:8000</a>‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is present on the requested resource. If an opaque response serves your needs, set the request’s mode to ‘no-cors’ to fetch the resource with CORS disabled.</p>
+<h3 id="4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端"><a href="#4-WebGl并不支持MySql-MySql写道后台-后台去访问Mysql返回结果给客户端" class="headerlink" title="4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)"></a>4.WebGl并不支持MySql(MySql写道后台,后台去访问Mysql返回结果给客户端)</h3><h3 id="5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题"><a href="#5-本地http-localhost-8000中测试微信小游戏的-WebGL-访问Cos出现CORS（跨域资源共享）问题" class="headerlink" title="5.本地http://localhost:8000中测试微信小游戏的 WebGL,访问Cos出现CORS（跨域资源共享）问题"></a>5.本地<a href="http://localhost:8000中测试微信小游戏的">http://localhost:8000中测试微信小游戏的</a> WebGL,访问Cos出现CORS（跨域资源共享）问题</h3><pre class="line-numbers language-none"><code class="language-none">Access to fetch at &#39;https:&#x2F;&#x2F;abab01001-1318826377.cos.ap-guangzhou.myqcloud.com&#x2F;APK&#x2F;APKVersion.txt&#39; from origin &#39;http:&#x2F;&#x2F;localhost:8000&#39; has been blocked by CORS policy: No &#39;Access-Control-Allow-Origin&#39; header is present on the requested resource. If an opaque response serves your needs, set the request&#39;s mode to &#39;no-cors&#39; to fetch the resource with CORS disabled.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>解决：</p>
 <p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411210016289.png"></p>
 
@@ -839,18 +839,17 @@ public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbe
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/11/21/tuanjie-wei-xin-xiao-you-xi/">
+                <a href="/2024/11/27/ming-ji-xin-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="一些碎碎念">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">一些碎碎念</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -860,22 +859,29 @@ public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbe
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-11-21
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-11-27
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Tuanjie/" class="post-category">
-                                    Tuanjie
+                            <a href="/categories/%E9%93%AD%E8%AE%B0%E5%9C%A8%E5%BF%83/" class="post-category">
+                                    铭记在心
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BF%9D%E6%8C%81%E5%A4%A7%E8%84%91%E6%B8%85%E9%86%92/">
+                        <span class="chip bg-color">保持大脑清醒</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -886,7 +892,7 @@ public CusBuildTarget CurrBuildTarget;<span aria-hidden="true" class="line-numbe
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/11/16/gong-ju-pian-da-jian-ti-zi/">
+                <a href="/2024/11/16/gong-ju-pian-da-jian-mo-fa/">
                     <div class="card-image">
                         
                         
