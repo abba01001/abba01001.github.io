@@ -3,11 +3,6 @@ title: Hello World
 date: 2024-11-10 18:32:00
 author: abba01001
 categories: 杂七杂八
-tags:
-  - 构建
-  - Git
-  - Hexo
-  - Cos
 ---
 <div style="text-align: center; font-size: 40px; font-weight: bold;">
   Hello World!
@@ -32,20 +27,6 @@ tags:
 网上下载安装Node、Git(Git安装自行百度，安装好之后需要配好环境，不然初始化不了博客)
 
 cmd输入命令进行安装hexo
-
-```
-certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website -d hrw1rdzqa7c5a8u3ibkn.website -m xijinping@protonmail.com
-```
-
-```
-npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo
-```
-
-```
-npm install hexo
-npm install hexo
-npm install hexo
-```
 
 ```nginx
 npm install hexo
@@ -77,7 +58,7 @@ npm install hexo
 
 ![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817497.png)
 
-### 2.将博客部署到GitHub
+### 2.将博客部署到GitHubPage
 
 在github里创建一个=========用户名.github.io的仓库
 ![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411112120698.png)
@@ -97,17 +78,17 @@ hexo g
 
 有空记录下===
 
-### 3.将博客网站部署到服务器
+### 3.将GitHubPage指向自己的域名
 
 ### 4.简化操作推送博客网站
 
-有空记录下===
+### 5.CDN加速访问GitHubPage
 
-### 5.写博客工具
+### 6.写博客工具
 
-### 6.构建腾讯云Cos图床
+### 7.构建腾讯云Cos图床
 
-### 7.给博客网站换皮肤
+### 8.给博客网站换皮肤
 
 ## 总结
 
