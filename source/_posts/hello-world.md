@@ -33,6 +33,20 @@ tags:
 
 cmd输入命令进行安装hexo
 
+```
+certbot certonly --standalone --agree-tos -n -d www.hrw1rdzqa7c5a8u3ibkn.website -d hrw1rdzqa7c5a8u3ibkn.website -m xijinping@protonmail.com
+```
+
+```
+npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo npm install hexo
+```
+
+```
+npm install hexo
+npm install hexo
+npm install hexo
+```
+
 ```nginx
 npm install hexo
 ```
