@@ -33,11 +33,9 @@ tags:
 
 cmd输入命令进行安装hexo
 
-```node
+```nginx
 npm install hexo
 ```
-
-
 
 ![](https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411101817724.png)
 
