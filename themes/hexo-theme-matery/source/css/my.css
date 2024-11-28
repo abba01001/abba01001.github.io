@@ -1,12 +1,8 @@
 /* Here is your custom css styles. */
 #backTop {
     position: fixed;
-    /* 使按钮固定在屏幕上 */
     bottom: 5px;
-    /* 距离屏幕底部的距离 */
     right: 5px;
-    /* 距离屏幕右边的距离 */
-    z-index: 9999999;
-    /* 设置一个非常高的 z-index，确保回到顶部按钮在最上层 */
+    z-index: 999;
 }
 
