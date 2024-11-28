@@ -138,3 +138,82 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
+
+
+OhMyLive2d:
+  enable: true
+  CDN: https://unpkg.com/oh-my-live2d
+  option:
+    menus:
+      disable: true, # 禁用右键菜单
+    dockedPosition: 'right' # 模型停靠位置 默认值: 'right' 可选值: 'left' | 'right'
+    mobileDisplay: true # 是否在移动端显示
+    restMessage: '' # 模型休息时的消息
+    tips:
+      copyTips:
+        duration: 3000
+        message:
+          - '你复制了什么内容呢?记得注明出处哦~'
+      idleTips:
+        duration: 5000 # 持续时间（单位：毫秒）
+        interval: 60000 # 闲置提示间隔时间（单位：毫秒）
+        message:
+          - '欢迎来到我的小站~'
+          - '在忙吗？'
+          - '有任何问题，可以问我~'
+      welcomeTips:
+        duration: 6000 # 欢迎提示持续时间（单位：毫秒）
+        message.afternoon:
+          - '午后很容易犯困呢~'
+        message.daybreak:
+          - '早上好呀，新的一天又开始了~'
+        message.dawn:
+          - '早上好呀，新的一天又开始了~'
+        message.evening:
+          - '晚上好呀，今天过得怎么样~'
+      mobileStyle:
+        width: 150
+        height: 80
+        left: calc(50% - 10px)  # 居中显示
+        top: -100px
+        background-color: rgba(0, 0, 0, 0.8)  # 深色背景，透明度调整
+        color: rgba(0, 255, 255, 1)
+        font-size: 16px
+        font-weight: bold  # 加粗字体，增加可读性
+        text-align: center  # 文本居中
+        border-radius: 25px  # 圆角
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3)  # 阴影效果
+        padding: 8px
+        backdrop-filter: blur(3px)  # 背景模糊效果
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)  # 字体阴影，增强对比度
+      style:
+        width: 230
+        height: 120
+        left: calc(50% - 0px)  # 居中显示
+        top: -100px
+        background-color: rgba(0, 0, 0, 0.8)  # 深色背景，透明度调整
+        color: rgba(0, 255, 255, 1)
+        font-size: 16px
+        font-weight: bold  # 加粗字体，增加可读性
+        text-align: center  # 文本居中
+        border-radius: 25px  # 圆角
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3)  # 阴影效果
+        padding: 8px
+        backdrop-filter: blur(3px)  # 背景模糊效果
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)  # 字体阴影，增强对比度
+    models:
+      - path: /live2d-models/mark_free_zh/runtime/mark_free_t04.model3.json
+        position: [-30, -65] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        scale: 0.15 # 模型的缩放比例 默认值: 0.1
+        stageStyle:
+          width: 250
+          height: 250
+        mobilePosition: [-50, -65] # 移动端时模型在舞台中的位置
+        mobileScale: 0.1 # 移动端时模型的缩放比例
+        mobileStageStyle: # 移动端时舞台的样式
+          width: 150
+          height: 150
+        motionPreloadStrategy: ALL # 动作预加载策略 默认值: IDLE 可选值: ALL | IDLE | NONE
+    # 通用样式设置
+    parentElement: document.body # 为组件提供一个父元素，如果未指定则默认挂载到 body 中
+    primaryColor: 'var(--btn-bg)' # 主题色 支持 CSS 变量
