@@ -29,7 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css">
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -511,11 +513,9 @@
 
     #floating-toc-btn {
         position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
+        bottom: 60px;
+        right: 5px;
+        z-index: 999;
     }
 
     #floating-toc-btn .btn-floating {
@@ -527,6 +527,7 @@
         line-height: 48px;
         font-size: 1.4rem;
     }
+
 </style>
 <div class="row">
     <div id="main-content" class="col s12 m12 l9">
@@ -673,22 +674,22 @@
 <p>下载地址： <a target="_blank" rel="noopener" href="https://notepad-plus-plus.org/downloads/">网页链接，直接下载链接(7.8.4)</a></p>
 <p>2.1 V2Ray配置文件</p>
 <p>V2Ray配置文件如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;
-&quot;inbound&quot;: &#123;
-    &quot;protocol&quot;: &quot;vmess&quot;,
-    &quot;listen&quot;: &quot;127.0.0.1&quot;,
- &quot;port&quot;: 9696,
- &quot;settings&quot;: &#123;&quot;clients&quot;: [
-        &#123;&quot;id&quot;: &quot;bc0d0a35-0218-4d66-8bcf-f384bd6cf905&quot;&#125;
-    ]&#125;,
- &quot;streamSettings&quot;: &#123;
- &quot;network&quot;: &quot;ws&quot;,
- &quot;wsSettings&quot;: &#123;&quot;path&quot;: &quot;&#x2F;h5j9QKvr64g&quot;&#125;
-    &#125;
-&#125;,
+<pre class="line-numbers language-none"><code class="language-none">{
+"inbound": {
+    "protocol": "vmess",
+    "listen": "127.0.0.1",
+ "port": 9696,
+ "settings": {"clients": [
+        {"id": "bc0d0a35-0218-4d66-8bcf-f384bd6cf905"}
+    ]},
+ "streamSettings": {
+ "network": "ws",
+ "wsSettings": {"path": "/h5j9QKvr64g"}
+    }
+},
 
-&quot;outbound&quot;: &#123;&quot;protocol&quot;: &quot;freedom&quot;&#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+"outbound": {"protocol": "freedom"}
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>把V2Ray的配置文件另存为config.json</p>
 <p>2.2 Nginx配置文件</p>
@@ -703,12 +704,12 @@ worker_processes  1;
 #pid        logs/nginx.pid;
 
 
-events &#123;
+events {
     worker_connections  1024;
-&#125;
+}
 
 
-http &#123;
+http {
     include       mime.types;
     default_type  application/octet-stream;
 
@@ -726,24 +727,24 @@ http &#123;
 
     #gzip  on;
 
-	server &#123;
+	server {
     ### 1:
 		server_name www.abba01001.fun;
 
 		listen 80;
 		rewrite ^(.*) https://$server_name$1 permanent;
-		if ($request_method  !~ ^(POST|GET)$) &#123; return  501; &#125;
+		if ($request_method  !~ ^(POST|GET)$) { return  501; }
 		autoindex off;
 		server_tokens off;
-	&#125;
+	}
 	
-	server &#123;
+	server {
 		ssl_certificate "C:/Certbot/live/www.abba01001.fun/fullchain.pem";
 		ssl_certificate_key "C:/Certbot/live/www.abba01001.fun/privkey.pem";
 
     ### 4:
 		location /h5j9QKvr64g
-		&#123;
+		{
 			proxy_pass http://127.0.0.1:9696;
 			proxy_redirect off;
 
@@ -759,7 +760,7 @@ http &#123;
 			keepalive_timeout 300 300;
 			proxy_buffering off;
 			proxy_buffer_size 8k;
-		&#125;
+		}
 
 		listen 443 ssl http2;
 		server_name $server_name;
@@ -779,7 +780,7 @@ http &#123;
 		resolver_timeout 10s;
 
     # Security settings
-		if ($request_method  !~ ^(POST|GET)$) &#123; return 501; &#125;
+		if ($request_method  !~ ^(POST|GET)$) { return 501; }
 		add_header X-Frame-Options DENY;
 		add_header X-XSS-Protection "1; mode=block";
 		add_header X-Content-Type-Options nosniff;
@@ -789,9 +790,9 @@ http &#123;
 
 		index index.html index.htm index.php;
 		root /usr/share/nginx/html;
-		location ~ .*\.(js|jpg|JPG|jpeg|JPEG|css|bmp|gif|GIF|png)$ &#123; access_log off; &#125;
-	&#125;
-&#125;
+		location ~ .*\.(js|jpg|JPG|jpeg|JPEG|css|bmp|gif|GIF|png)$ { access_log off; }
+	}
+}
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>把Nginx的配置文件另存为nginx.conf（注意扩展名就是.conf）</p>
@@ -841,16 +842,16 @@ http &#123;
 <p>IMPORTANT NOTES:</p>
 <ul>
 <li><p>Congratulations! Your certificate and chain have been saved at:</p>
-<p>&#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;<a target="_blank" rel="noopener" href="http://www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem">www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem</a></p>
+<p>/etc/letsencrypt/live/<a target="_blank" rel="noopener" href="http://www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem">www.hrw1rdzqa7c5a8u3ibkn.website/fullchain.pem</a></p>
 <p>Your key file has been saved at:</p>
-<p>&#x2F;etc&#x2F;letsencrypt&#x2F;live&#x2F;<a target="_blank" rel="noopener" href="http://www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem">www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem</a></p>
+<p>/etc/letsencrypt/live/<a target="_blank" rel="noopener" href="http://www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem">www.hrw1rdzqa7c5a8u3ibkn.website/privkey.pem</a></p>
 <p>Your cert will expire on 2020-06-04. To obtain a new or tweaked</p>
 <p>version of this certificate in the future, simply run certbot</p>
 <p>again. To non-interactively renew <em>all</em> of your certificates, run</p>
 <p>“certbot renew”</p>
 </li>
 <li><p>Your account credentials have been saved in your Certbot</p>
-<p>configuration directory at &#x2F;etc&#x2F;letsencrypt. You should make a</p>
+<p>configuration directory at /etc/letsencrypt. You should make a</p>
 <p>secure backup of this folder now. This configuration directory will</p>
 <p>also contain certificates and private keys obtained by Certbot so</p>
 <p>making regular backups of this folder is ideal.</p>
@@ -858,7 +859,7 @@ http &#123;
 <li><p>If you like Certbot, please consider supporting our work by:</p>
 </li>
 </ul>
-<p>Donating to ISRG &#x2F; Let’s Encrypt: <a target="_blank" rel="noopener" href="https://letsencrypt.org/donate">https://letsencrypt.org/donate</a> Donating to EFF: <a target="_blank" rel="noopener" href="https://eff.org/">https://eff.org</a></p>
+<p>Donating to ISRG / Let’s Encrypt: <a target="_blank" rel="noopener" href="https://letsencrypt.org/donate">https://letsencrypt.org/donate</a> Donating to EFF: <a target="_blank" rel="noopener" href="https://eff.org/">https://eff.org</a></p>
 </blockquote>
 <p>就表示成功。</p>
 <p>注意：这一步比较容易出错，常见的问题有：</p>
@@ -871,14 +872,14 @@ http &#123;
 <p>3.3 安装V2Ray和Nginx</p>
 <h2 id="4-上传配置文件-运行"><a href="#4-上传配置文件-运行" class="headerlink" title="4 上传配置文件&amp;运行"></a>4 上传配置文件&amp;运行</h2><p>安装好V2Ray和Nginx后，我们终于来到了最后一步。在启动V2Ray之前，需要把之前的配置文件上传</p>
 <p>4.1 将之前写好的config.json覆盖配置文件v2ray目录下。</p>
-<p>nginx.conf覆盖到nginx&#x2F;conf目录下</p>
+<p>nginx.conf覆盖到nginx/conf目录下</p>
 <p>4.2 自行百度启动v2ray和nginx</p>
 <p>配置完成后，可以在浏览器里输入域名网址，如果显示Nginx界面，就说明网址配置成功了！</p>
 <p>接下来要做的是上传一个网页模板，这样别人访问你的服务器就会看到一个真的网站。</p>
 <p>4.3 上传网页模板</p>
 <p>去Google上搜“website template”可以找到很多提供网页模板的网站，随便找一家。网页模板强烈建议用纯英文模板，其中不要包含任何中文内容，否则（可能）会增加网站被墙的概率。下载好以后，解压压缩文件，一路点开，如图，可以看到里面有一个index.html文件(有些是index.htm或index.php)</p>
 <p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411161925428.png" alt="img4.3.1"></p>
-<p>把这个文件夹里的所有东西，包括index.html，blog.html，以及css，fonts，img，js几个文件夹，全部上传到 nginx&#x2F;html&#x2F; 目录下面。</p>
+<p>把这个文件夹里的所有东西，包括index.html，blog.html，以及css，fonts，img，js几个文件夹，全部上传到 nginx/html/ 目录下面。</p>
 <p>接下来打开网址，这时候可以看到一个真正的网站。</p>
 <h2 id="5-客户端配置"><a href="#5-客户端配置" class="headerlink" title="5 客户端配置"></a>5 客户端配置</h2><p>配置完成后如下图:</p>
 <p><img src="https://abab01001-1318826377.cos.ap-guangzhou.myqcloud.com/BlogData/Image/202411161925766.png"></p>
@@ -1356,9 +1357,9 @@ http &#123;
     
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
+                   server="tencent"
                    type="playlist"
-                   id="503838841"
+                   id="9377662965"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -1606,6 +1607,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<!-- hexo injector body_end start --><script data-pjax src="https://unpkg.com/oh-my-live2d"></script><script>const oml2d = OML2D.loadOml2d({menus:{disable:"true,"},dockedPosition:"right",mobileDisplay:true,restMessage:"",tips:{copyTips: {"duration":3000,"message":["你复制了什么内容呢?记得注明出处哦~"]},idleTips:{duration:5000,interval:60000,message:["欢迎来到我的小站~","在忙吗？","有任何问题，可以问我~"]},welcomeTips: {"duration":6000,"message.afternoon":["午后很容易犯困呢~"],"message.daybreak":["早上好呀，新的一天又开始了~"],"message.dawn":["早上好呀，新的一天又开始了~"],"message.evening":["晚上好呀，今天过得怎么样~"]},mobileStyle: {"width":150,"height":80,"left":"calc(50% - 10px)","top":"-100px","background-color":"rgba(0, 0, 0, 0.8)","color":"rgba(0, 255, 255, 1)","font-size":"16px","font-weight":"bold","text-align":"center","border-radius":"25px","box-shadow":"0px 4px 8px rgba(0, 0, 0, 0.3)","padding":"8px","backdrop-filter":"blur(3px)","text-shadow":"2px 2px 5px rgba(0, 0, 0, 0.3)"},style: {"width":230,"height":120,"left":"calc(50% - 0px)","top":"-100px","background-color":"rgba(0, 0, 0, 0.8)","color":"rgba(0, 255, 255, 1)","font-size":"16px","font-weight":"bold","text-align":"center","border-radius":"25px","box-shadow":"0px 4px 8px rgba(0, 0, 0, 0.3)","padding":"8px","backdrop-filter":"blur(3px)","text-shadow":"2px 2px 5px rgba(0, 0, 0, 0.3)"}},models:[{"path":"/live2d-models/mark_free_zh/runtime/mark_free_t04.model3.json","position":[-40,-65],"scale":0.15,"stageStyle":{"width":250,"height":270},"mobilePosition":[-50,-65],"mobileScale":0.1,"mobileStageStyle":{"width":150,"height":170},"motionPreloadStrategy":"ALL"}],parentElement:document.body,primaryColor:"var(--btn-bg)"});</script><!-- hexo injector body_end end --></body>
 
 </html>
