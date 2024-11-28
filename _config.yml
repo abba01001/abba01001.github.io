@@ -203,12 +203,12 @@ OhMyLive2d:
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)  # 字体阴影，增强对比度
     models:
       - path: /live2d-models/mark_free_zh/runtime/mark_free_t04.model3.json
-        position: [-40, -65] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
+        position: [-65, -40] # 模型在舞台中的位置。 默认值: [0,0] [横坐标, 纵坐标]
         scale: 0.15 # 模型的缩放比例 默认值: 0.1
         stageStyle:
           width: 250
           height: 270
-        mobilePosition: [-50, -65] # 移动端时模型在舞台中的位置
+        mobilePosition: [-65, -40] # 移动端时模型在舞台中的位置
         mobileScale: 0.1 # 移动端时模型的缩放比例
         mobileStageStyle: # 移动端时舞台的样式
           width: 150
