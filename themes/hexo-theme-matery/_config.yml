@@ -424,6 +424,7 @@ libs:
   css:
     matery: /css/matery.css
     mycss: /css/my.css
+    mouse: /css/mouse.css
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
     materialize: /libs/materialize/materialize.min.css # 1.0.0
     aos: /libs/aos/aos.css
