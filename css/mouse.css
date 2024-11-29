@@ -1,0 +1,20 @@
+/* 默认光标 */
+body {
+    cursor: url('/images/default.cur'), default !important;
+}
+
+/* 链接上使用指针光标 */
+a {
+    cursor: url('/images/pointer.cur'), pointer !important;
+}
+
+/* 禁用按钮时使用不可用光标 */
+button[disabled] {
+    cursor: url('/images/not-allowed.cur'), not-allowed !important;
+}
+
+
+/* 当鼠标悬停在可移动元素上时，显示移动光标 */
+.draggable {
+    cursor: url('/images/move.cur'), move !important;
+}
