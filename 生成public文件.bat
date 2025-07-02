@@ -22,14 +22,7 @@ for /L %%i in (8,-1,1) do (
     timeout /t 1 >nul
 )
 
-:: 确保 public 文件夹存在并执行上传脚本
-echo Checking if 'public\上传博客文件.bat' exists...
-if exist "public\上传博客文件.bat" (
-    echo File exists! Executing upload script...
-    start cmd /k "public\上传博客文件.bat"
-) else (
-    echo Error: 'public\上传博客文件.bat' not found!
-)
+"C:\Program Files (x86)\WinSCP\winscp.com" /script="%cd%\upload_script.txt"
 
 :: 等待用户查看输出
 pause
