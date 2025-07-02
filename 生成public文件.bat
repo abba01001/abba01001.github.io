@@ -15,9 +15,9 @@ start cmd /c "npx hexo g"
 :: 等待 2 秒钟，确保第二个命令有时间执行
 timeout /t 2
 
-:: 等待 8 秒钟并倒计时
-echo Waiting for 8 seconds...
-for /L %%i in (8,-1,1) do (
+:: 等待 5 秒钟并倒计时
+echo Waiting for 5 seconds...
+for /L %%i in (5,-1,1) do (
     echo %%i...
     timeout /t 1 >nul
 )
